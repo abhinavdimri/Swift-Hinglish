@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hinglish" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nkd-L6-Scx">
+                                <rect key="frame" x="150" y="108" width="300" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="kJj-PS-HHa"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Hindi"/>
+                                    <segment title="English"/>
+                                </segments>
+                                <color key="tintColor" red="0.93010500975654309" green="1" blue="0.91704850732701426" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kJj-PS-HHa"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="segmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="rGo-jn-NNn"/>
+                                </connections>
+                            </segmentedControl>
+                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" placeholder="Enter word here" showsSearchResultsButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fqb-YX-Mui">
+                                <rect key="frame" x="0.0" y="44" width="600" height="44"/>
+                                <color key="barTintColor" red="0.90980392160000001" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert" returnKeyType="go"/>
+                            </searchBar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdI-0X-xlU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.4549019608" green="0.098039215690000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem id="hVq-Qi-fY7"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language Conveter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="qvL-XY-48a">
+                                <rect key="frame" x="164" y="279" width="272.5" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ogG-yn-KkI">
+                                <rect key="frame" x="20" y="328" width="560" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="S1r-zs-OMh"/>
+                                </constraints>
+                                <string key="text">Language conveter is a language translation tool that you can use to convert Hindi (hinglish) words or English words to roman hindi letters. To get started just type the word in the search bar and press enter. The resultant roman hindi word will be displayed on the screen.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="0.74194524625335079" green="0.7205717757461011" blue="0.74015375870318267" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PUg-a3-MSW">
+                                <rect key="frame" x="20" y="150" width="560" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggestions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wx1-Gw-sfU">
+                                        <rect key="frame" x="8" y="8" width="544" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="yf6-fe-eoi">
+                                        <rect key="frame" x="8" y="68" width="280" height="54.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These suggestions are based off the phonetic sounds of the word." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ub-D5-S6A">
+                                        <rect key="frame" x="8" y="139" width="544" height="89"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="89" id="0j4-nV-dFy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <color key="textColor" red="0.80841619320000002" green="0.80841619320000002" blue="0.80841619320000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="9oZ-U4-J2D">
+                                        <rect key="frame" x="288" y="68" width="264" height="54.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.77647058823529413" green="0.098039215686274508" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Wx1-Gw-sfU" firstAttribute="leading" secondItem="PUg-a3-MSW" secondAttribute="leading" constant="8" id="0GP-aj-6xW"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Ub-D5-S6A" secondAttribute="trailing" constant="8" id="2mJ-Bq-hL7"/>
+                                    <constraint firstItem="yf6-fe-eoi" firstAttribute="top" secondItem="Wx1-Gw-sfU" secondAttribute="bottom" constant="32.5" id="Afn-bA-zgi"/>
+                                    <constraint firstItem="9oZ-U4-J2D" firstAttribute="leading" secondItem="yf6-fe-eoi" secondAttribute="trailing" id="Dxj-P1-13m"/>
+                                    <constraint firstAttribute="trailing" secondItem="9oZ-U4-J2D" secondAttribute="trailing" constant="8" id="HXa-BN-PTW"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wx1-Gw-sfU" secondAttribute="trailing" constant="8" id="TrI-eq-7On"/>
+                                    <constraint firstItem="2Ub-D5-S6A" firstAttribute="leading" secondItem="PUg-a3-MSW" secondAttribute="leading" constant="8" id="VIi-6B-mUe"/>
+                                    <constraint firstItem="2Ub-D5-S6A" firstAttribute="top" secondItem="9oZ-U4-J2D" secondAttribute="bottom" constant="16.5" id="XsA-dA-aXL"/>
+                                    <constraint firstItem="Wx1-Gw-sfU" firstAttribute="top" secondItem="PUg-a3-MSW" secondAttribute="top" constant="8" id="etr-tw-xfA"/>
+                                    <constraint firstItem="yf6-fe-eoi" firstAttribute="leading" secondItem="PUg-a3-MSW" secondAttribute="leading" constant="8" id="hQg-yg-dey"/>
+                                    <constraint firstItem="yf6-fe-eoi" firstAttribute="width" secondItem="PUg-a3-MSW" secondAttribute="width" multiplier="0.5" id="kiR-CY-cyK"/>
+                                    <constraint firstItem="9oZ-U4-J2D" firstAttribute="top" secondItem="Wx1-Gw-sfU" secondAttribute="bottom" constant="32.5" id="oBF-8l-HPK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45490196078431372" green="0.098039215686274508" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nkd-L6-Scx" firstAttribute="top" secondItem="fqb-YX-Mui" secondAttribute="bottom" constant="20" id="16s-MH-aUE"/>
+                            <constraint firstItem="qvL-XY-48a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2hO-4R-6NN"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ogG-yn-KkI" secondAttribute="leading" id="2sr-db-q20"/>
+                            <constraint firstItem="qvL-XY-48a" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3Ex-Pe-Voo"/>
+                            <constraint firstItem="PUg-a3-MSW" firstAttribute="top" secondItem="nkd-L6-Scx" secondAttribute="bottom" constant="14" identifier="animate" id="E2S-LB-GM1"/>
+                            <constraint firstItem="nkd-L6-Scx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Laq-2S-AWV"/>
+                            <constraint firstItem="TdI-0X-xlU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="Mg5-ue-XXz"/>
+                            <constraint firstItem="fqb-YX-Mui" firstAttribute="top" secondItem="TdI-0X-xlU" secondAttribute="bottom" id="UpK-By-Gk1"/>
+                            <constraint firstItem="TdI-0X-xlU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="YNM-Pg-ilQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ogG-yn-KkI" secondAttribute="trailing" id="Ys7-GL-jeY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nkd-L6-Scx" secondAttribute="trailing" id="dRJ-wg-NHR"/>
+                            <constraint firstItem="nkd-L6-Scx" firstAttribute="width" secondItem="fqb-YX-Mui" secondAttribute="width" multiplier="0.5" id="gN3-Jx-trU"/>
+                            <constraint firstItem="ogG-yn-KkI" firstAttribute="top" secondItem="qvL-XY-48a" secondAttribute="bottom" constant="8" id="hbC-LG-Vd1"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="PUg-a3-MSW" secondAttribute="leading" id="loK-RL-sLE"/>
+                            <constraint firstItem="PUg-a3-MSW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mPd-j9-h3L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TdI-0X-xlU" secondAttribute="trailing" constant="-20" id="n8y-Im-yeD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fqb-YX-Mui" secondAttribute="trailing" constant="-20" id="nDb-Dn-fqc"/>
+                            <constraint firstItem="fqb-YX-Mui" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="t74-d8-0d6"/>
+                            <constraint firstItem="PUg-a3-MSW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yaD-vq-NMH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PUg-a3-MSW" secondAttribute="trailing" id="zjN-Eh-ELz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dRJ-wg-NHR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="headingLabel" destination="qvL-XY-48a" id="nZx-jX-B4G"/>
+                        <outlet property="infoLabel" destination="ogG-yn-KkI" id="FPV-vx-Th9"/>
+                        <outlet property="searchBar" destination="fqb-YX-Mui" id="TPw-dv-bNw"/>
+                        <outlet property="segmentedControl" destination="nkd-L6-Scx" id="tTh-tk-ydX"/>
+                        <outlet property="suggestOne" destination="yf6-fe-eoi" id="Lul-xL-le1"/>
+                        <outlet property="suggestTwo" destination="9oZ-U4-J2D" id="ebX-kc-ENA"/>
+                        <outlet property="textInputView" destination="PUg-a3-MSW" id="4ey-97-8V6"/>
+                        <outlet property="topLayout" destination="etr-tw-xfA" id="4k3-Tu-JCG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="432" y="358"/>
+        </scene>
+    </scenes>
+</document>
