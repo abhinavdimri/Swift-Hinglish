@@ -14,7 +14,7 @@
 		6D30C5441C010B8200DCC06E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D30C5421C010B8200DCC06E /* LaunchScreen.storyboard */; };
 		6D30C54C1C010CE400DCC06E /* HinglishController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D30C54B1C010CE400DCC06E /* HinglishController.swift */; };
 		6D7E83881C02E212008BF941 /* HindiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7E83871C02E212008BF941 /* HindiController.swift */; };
-		6DB925601CC8B292004655D6 /* .gitnore in Resources */ = {isa = PBXBuildFile; fileRef = 6DB9255F1CC8B292004655D6 /* .gitnore */; };
+		6DB9258E1CC8B56D004655D6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6DB9258D1CC8B56D004655D6 /* .gitignore */; };
 		6DC32D7D1C02342900B7DD19 /* EnglishModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC32D7C1C02342900B7DD19 /* EnglishModel.swift */; };
 		6DD22F631C087DD5003745BB /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD22F621C087DD5003745BB /* Extention.swift */; };
 /* End PBXBuildFile section */
@@ -29,7 +29,7 @@
 		6D30C5451C010B8200DCC06E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D30C54B1C010CE400DCC06E /* HinglishController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HinglishController.swift; sourceTree = "<group>"; };
 		6D7E83871C02E212008BF941 /* HindiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HindiController.swift; sourceTree = "<group>"; };
-		6DB9255F1CC8B292004655D6 /* .gitnore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitnore; sourceTree = "<group>"; };
+		6DB9258D1CC8B56D004655D6 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		6DC32D7C1C02342900B7DD19 /* EnglishModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnglishModel.swift; path = ../EnglishModel.swift; sourceTree = "<group>"; };
 		6DD22F621C087DD5003745BB /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,6 +48,7 @@
 		6D30C52D1C010B8200DCC06E = {
 			isa = PBXGroup;
 			children = (
+				6DB9258D1CC8B56D004655D6 /* .gitignore */,
 				6D30C5381C010B8200DCC06E /* Hinglish */,
 				6D30C5371C010B8200DCC06E /* Products */,
 			);
@@ -69,7 +70,6 @@
 				6D7806961C0C31EA0050AF1F /* Controllers */,
 				6D7806981C0C323A0050AF1F /* Delegates */,
 				6D78069A1C0C32770050AF1F /* Storyboards */,
-				6DB9255F1CC8B292004655D6 /* .gitnore */,
 			);
 			path = Hinglish;
 			sourceTree = "<group>";
@@ -176,9 +176,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DB9258E1CC8B56D004655D6 /* .gitignore in Resources */,
 				6D30C5441C010B8200DCC06E /* LaunchScreen.storyboard in Resources */,
 				6D30C5411C010B8200DCC06E /* Assets.xcassets in Resources */,
-				6DB925601CC8B292004655D6 /* .gitnore in Resources */,
 				6D30C53F1C010B8200DCC06E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
